@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;//让a的所有字体样式为默认
+  color: #ff9800;//改变其颜色
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{//因为标题有默认的margin所以在布局之前通常要重置其为0
+  margin: 0;
+}
+
+ul{//这个属性貌似这个改了无效，所以我在需要改的地方改了
+  padding: 0;
+  margin: 0;
+}

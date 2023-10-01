@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load my_tag %}  {# 导入我们的方法 #}
+<head>
+
+    <meta charset="UTF-8">
+    <title>braveBoy的个人博客 </title>
+    <link rel="stylesheet" href="/static/my/css/reset.css">
+    <link rel="stylesheet" href="/static/my/css/index.css">
+    <link rel="stylesheet" href="/static/fontawesome-free-5/css/all.min.css">{# 用于图标 #}
+
+    <script src="/static/vue/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <link rel="stylesheet" :href="'/static/my/css/theme/' + theme + '.css'">
+    <nav>
+        <div class="left">
+            <a href="../">首页</a>
+            <a href="/news/">新闻</a>
+            <a href="#">心情</a>
+            <a href="#">回忆录</a>
+            <a href="#">关于</a>
+            <a href="#">网站导航</a>
+        </div>
+        <div class="right">
+            <img v-show="theme ==='light'" src="/static/my/img/nav/light.svg" @click="setTheme('dark')" alt="">
+            <img v-show="theme ==='dark'" src="/static/my/img/nav/dark.svg" @click="setTheme('light')" alt="">
+{#            <a href="#" @click="setTheme('light')">白色主题</a>#}
+{#            <a href="#" @click="setTheme('dark')">黑色主题</a>#}
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+        </div>
+    </nav>
+    {% banner 'index' %}
+    <main>
+        {% block main %}
+            <div class="main">
+                <div class="left">
+                    <div class="boutique_article card">
+                        <div class="title">
+                            <h2>精选文章</h2>
+                            <div class="switch_article_category">
+                                <span :active="this_category === 'qianduan'" @click="switch_article_category('qianduan')">前端</span>
+                                <span :active="this_category === 'houduan'" @click="switch_article_category('houduan')">后端</span>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul v-show="this_category === 'qianduan'" class="qianduan">
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul v-show="this_category === 'houduan'" class="houduan">
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2>文章标题</h2>
+                                        <p>内容介绍阿八八八八八八八八八阿八abababababa 八八吧阿八八八阿八八八吧</p>
+                                        <span>一天前</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hot_list card">
+                        <div class="title">
+                            <h2>今日热搜</h2>
+                            <div>
+                                <a href="#">查看更多</a>
+                            </div>
+                        </div>
+                        <div class="body">
+                            主要内容区
+                        </div>
+                    </div>
+                    <div class="all_article card">
+                        <div class="title">
+                            <h2>博客文章</h2>
+                            <div>
+                                <a href="#">查看更多</a>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="小秘密噢有">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2><a href="#">标题</a></h2>
+                                        <p>啊吧啊吧啊吧啊吧啊吧啊吧尊嘟假嘟啊吧啊吧尊嘟假嘟啊吧啊吧尊嘟假嘟啊吧啊吧尊嘟假嘟嘟假嘟
+                                            啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊
+                                            吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假</p>
+                                        <div class="article_info">
+                                            <span><i class="fas fa-clock"></i>2021-12-12</span>
+                                            <span><i class="fas fa-thumbs-up"></i>666</span>
+                                            <span><i class="fas fa-eye"></i>666</span>
+                                            <span><i class="fas fa-comments"></i>666</span>
+                                            <span><i class="fas fa-star-half-alt"></i>666</span>
+                                        </div>
+                                        <a href="">查看详情</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <div>
+                                            <img src="/static/my/img/jay/jay_00.jpg" alt="小秘密噢有">
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <h2><a href="#">标题</a></h2>
+                                        <p>啊吧啊吧啊吧啊吧啊吧啊吧尊嘟假嘟啊吧啊吧尊嘟假嘟啊吧啊吧尊嘟假嘟啊吧啊吧尊嘟假嘟嘟假嘟
+                                            啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊
+                                            吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假嘟假嘟啊吧啊吧尊嘟假</p>
+                                        <div class="article_info">
+                                            <span><i class="fas fa-clock"></i>2021-12-12</span>
+                                            <span><i class="fas fa-thumbs-up"></i>666</span>
+                                            <span><i class="fas fa-eye"></i>666</span>
+                                            <span><i class="fas fa-comments"></i>666</span>
+                                            <span><i class="fas fa-star-half-alt"></i>666</span>
+                                        </div>
+                                        <a href="">查看详情</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="advertisements card">
+                        <div class="title">
+                            <h2>独家广告</h2>
+                            <div>
+                                <a href="#">申请</a>
+                            </div>
+                        </div>
+                        <div class="body">
+                            主要内容区
+                        </div>
+                    </div>
+                    <div class="tags card">
+                        <div class="title">
+                            <h2>标签云</h2>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                                <li>python</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="site_info card">
+                        <div class="title">
+                            <h2>站点信息</h2>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="body">
+                            主要内容区
+                        </div>
+                    </div>
+                    <div class="links card">
+                        <div class="title">
+                            <h2>友情链接</h2>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="body">
+                            主要内容区
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <div class="left">
+            <p class="thank">Thanks For You</p>
+            <p class="site_info">
+                <span><img src="/static/my/img/footer/tencent.png" alt="">腾讯云服务器</span>
+                <span><img src="/static/my/img/footer/tencent.png" alt="">腾讯SSL证书</span>
+                <span><img src="/static/my/img/footer/qiniu.png" alt="">七牛云存储</span>
+            </p>
+            <p class="version">
+                <span>version</span>
+                <span>1.0.0</span>
+            </p>
+            <p>
+                建站日期：2023-9-27
+            </p>
+            <p class="beian">
+                <span href="https://beian.mitt.gov.cn/"><img src="/static/my/img/footer/badges.png" alt="">备案号xxxx</span>
+            </p>
+        </div>
+        <div class="right">
+            <div class="contact">
+                <div class="QQ">
+                    <img class="svg_qq" src="/static/my/img/footer/qq_icon.svg" alt="">
+                    <img class="qq" src="/static/my/img/footer/qq.png" alt="">
+                </div>
+                <div class="WeChat">
+                    <img class="svg_wechat" src="/static/my/img/footer/wexin_icon.svg" alt="">
+                    <img class="wechat" src="/static/my/img/footer/wechat.png" alt="">
+                </div>
+            </div>
+            <p>联系方式:oo0zccoo0@gamil.com</p>
+        </div>
+    </footer>
+</div>
+<script>
+    new Vue({
+        el: '#app',
+        delimiters: ["[[","]]"],
+        data: {
+            theme: "dark", //默认的主题
+            this_category: "qianduan", //当前精选文章所选
+        },
+        methods:{
+            //初始化主题
+            init_theme(){
+                let theme = localStorage.getItem('theme')
+                if (theme){
+                    this.theme = theme
+                }
+            },
+            //设置主题
+            setTheme(themeName){
+                this.theme = themeName// 需要写入到localStorage中
+                localStorage.setItem('theme',themeName)
+            },
+            //切换精选文章
+            switch_article_category(categoryName){
+                this.this_category = categoryName;
+            }
+
+        },
+        created(){//用于读取localStorage中的信息
+            this.init_theme()
+        },
+    })
+
+    //轮播图
+    //获取需要轮播的div
+    let menu_img = document.querySelectorAll('.dynamic_shuffl')
+    //获取divs长度
+    let menu_length = menu_img.length
+    let index = 0
+    let timer =null;
+    clearInterval(timer)
+    setInterval(() => {
+        index++
+        if(index === menu_length){
+            index = 0
+            for(let i of menu_img){
+                i.style.opacity = 0
+            }
+        }
+        menu_img[index].style.opacity = 1
+    },1000)
+</script>
+</body>
+</html>
