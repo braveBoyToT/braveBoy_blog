@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf5318fc-3398-4206-9b83-d6fde3245aaf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app01/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/templatetags/my_tag.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/templatetags/my_tag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app01/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app01/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/braveBoy_blog/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/braveBoy_blog/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/braveBoy_blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/braveBoy_blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/my/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/css/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/my/css/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/css/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/my/css/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/my/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/css/reset.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/static/my/css/reset.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/css/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/my/css/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/img/jay/jay_01.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/media/article_img/jay_01.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/my/img/jay/jay_04.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/my_tag/headers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/my_tag/headers.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/studybefore_login" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/static/axios/axios.min.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Vy0xsgkY5C3tAapS3j9MQGXjir" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Zccc",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/5_Codes/codes_python/braveBoy_blog/static",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\static" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\media" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\static\my" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\app01\utils\font" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\static\my\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\media\article_img" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\media" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\static\my\img" />
+      <recent name="D:\5_Codes\codes_python\braveBoy_blog\static\my" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.braveBoy_blog">
+    <configuration name="article.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/braveBoy_blog/templates/article.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="文章评论" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braveBoy_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app01/评论测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app01/评论测试/文章评论.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="文章评论方案二" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braveBoy_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app01/评论测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app01/评论测试/文章评论方案二.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="文章评论" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braveBoy_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app01/评论测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app01/评论测试/文章评论.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braveBoy_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/braveBoy_blog" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/braveBoy_blog/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sub_comment" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="braveBoy_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app01/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app01/utils/sub_comment.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="braveBoy_blog" type="Python.DjangoServer" factoryName="Django server">
+      <module name="braveBoy_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="braveBoy_blog.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.article.html" />
+        <item itemvalue="Python.sub_comment" />
+        <item itemvalue="Python.文章评论" />
+        <item itemvalue="Python.settings" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf5318fc-3398-4206-9b83-d6fde3245aaf" name="Changes" comment="" />
+      <created>1695793262133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695793262133</updated>
+      <workItem from="1695793282690" duration="65000" />
+      <workItem from="1695793484397" duration="11404000" />
+      <workItem from="1695812719351" duration="30000" />
+      <workItem from="1695818021872" duration="6391000" />
+      <workItem from="1695858661202" duration="11898000" />
+      <workItem from="1695878711125" duration="3379000" />
+      <workItem from="1695888604535" duration="13514000" />
+      <workItem from="1696074628800" duration="4083000" />
+      <workItem from="1696082031430" duration="969000" />
+      <workItem from="1696083018656" duration="1074000" />
+      <workItem from="1696135873207" duration="12273000" />
+      <workItem from="1696244214390" duration="226000" />
+      <workItem from="1696245280506" duration="23000" />
+      <workItem from="1696245367329" duration="9000" />
+      <workItem from="1696245615575" duration="739000" />
+      <workItem from="1696246372092" duration="10939000" />
+      <workItem from="1696299804719" duration="8656000" />
+      <workItem from="1696317452016" duration="19769000" />
+      <workItem from="1696339970910" duration="4662000" />
+      <workItem from="1696392384754" duration="12020000" />
+      <workItem from="1696413087653" duration="12828000" />
+      <workItem from="1696593052631" duration="10301000" />
+      <workItem from="1696636831799" duration="10377000" />
+      <workItem from="1696654647498" duration="7300000" />
+      <workItem from="1696661976412" duration="5224000" />
+      <workItem from="1696667624592" duration="20978000" />
+      <workItem from="1696722417246" duration="11383000" />
+      <workItem from="1696838093085" duration="7756000" />
+      <workItem from="1696905087889" duration="4983000" />
+      <workItem from="1696910791658" duration="6700000" />
+      <workItem from="1696992020085" duration="19956000" />
+      <workItem from="1697076167215" duration="593000" />
+      <workItem from="1697098438848" duration="1101000" />
+      <workItem from="1697265855030" duration="3169000" />
+      <workItem from="1697364336547" duration="1558000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/braveBoy_blog$sub_comment.coverage" NAME="sub_comment Coverage Results" MODIFIED="1696728603730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01/utils" />
+    <SUITE FILE_PATH="coverage/braveBoy_blog$.coverage" NAME="文章评论方案二 Coverage Results" MODIFIED="1696728288197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01/评论测试" />
+    <SUITE FILE_PATH="coverage/braveBoy_blog$settings.coverage" NAME="settings Coverage Results" MODIFIED="1696595961274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/braveBoy_blog" />
+  </component>
+</project>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台界面</title>
+    <link rel="stylesheet" href="/static/my/css/reset.css">
+    <link rel="stylesheet" href="/static/my/css/backend/backend_base.css">
+
+    <script src="/static/axios/axios.min.js"></script>
+    <script src="/static/vue/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+    {% block css %}
+    {% endblock %}
+</head>
+<body>
+
+<div id="app">
+    <aside>
+        <div class="slogan">
+            <img src="/static/my/img/jay/jay_02.jpeg" alt="">
+        </div>
+
+        <ul>
+            <li><a href="/">首页</a></li>
+            <li><a href="/backend">个人中心</a></li>
+            <li><a href="/backend/edit_avatar">修改头像</a></li>
+            <li><a href="/backend/reset_password">修改密码</a></li>
+            {% if request.user.is_superuser %}
+            	<li><a href="/backend/add_article">添加文章</a></li>
+            {% endif %}
+            <li><a href="/logout">注销退出</a></li>
+        </ul>
+    </aside>
+
+    <main>
+    {% csrf_token %}
+    {% block main %}
+        <div class="user_info">
+            <div class="left">
+                <img src="/static/my/img/jay/jay_08.jpeg" alt="">
+            </div>
+            <div class="right">
+                <div class="item">
+                    <span><b>用户名：</b>Z ccc</span>
+                </div>
+                <div class="item">
+                    <span><b>注册时间：</b>2023-10-4</span>
+                </div>
+                <div class="item">
+                    <span><b>上次登陆时间：</b>xxx-xxx-xxx</span>
+                </div>
+                <div class="item">
+                    <span><b>邮箱：</b>xxxxx@xxx.com</span>
+                </div>
+                <div class="item">
+                    <span><b>xxxx：</b>xxx</span>
+                </div>
+                <div class="item">
+                    <span><b>xxxx：</b>xxx</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="action">
+            <div class="item">
+                <el-button>完善信息</el-button>
+            </div>
+            <div class="item">
+                <el-button type="success">修改头像</el-button>
+            </div>
+            <div class="item">
+                <el-button type="warning">修改密码</el-button>
+            </div>
+            <div class="item">
+                <el-button type="danger">注销推出</el-button>
+            </div>
+        </div>
+
+        <div class="collection_article_all">
+            <p>收藏的文章</p>
+            <div class="article_list">
+                <div class="item">
+                    <div class="left">
+                        <img src="/static/my/img/jay/jay_25.jpeg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>测试测试测试</h4>
+                        <p>真不想打了啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <img src="/static/my/img/jay/jay_25.jpeg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>测试测试测试</h4>
+                        <p>真不想打了啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <img src="/static/my/img/jay/jay_25.jpeg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>测试测试测试</h4>
+                        <p>真不想打了啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="left">
+                        <img src="/static/my/img/jay/jay_25.jpeg" alt="">
+                    </div>
+                    <div class="right">
+                        <h4>测试测试测试</h4>
+                        <p>真不想打了啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                            啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+    </main>
+</div>
+
+{% block js %}
+{% endblock %}
+<script>
+    axios.interceptors.request.use(
+        request => {
+            if(request.method !== 'get'){
+                let csrftoken = document.querySelector('input[name="csrfmiddlewaretoken"]').value{# 获取token #}
+
+                request.headers['X-CSRFToken'] = csrftoken
+            }
+            return request
+        }
+    )
+    axios.interceptors.response.use(
+        response => {
+            console.log(response)
+            return response.data
+        }
+    )
+
+    new Vue({
+        el: '#app',
+        data:{
+            // 是否展开侧边栏的默认值
+            add_drawer: false,
+            // 选中的文章
+            add_article_activeNames: ['1'],
+            //文章分类的id
+            category_id: '',
+            category_options: [
+                {value: '1', label: '前端'},
+                {value: '2', label: '后端'},
+                {value: '3', label: '项目相关'},],
+            tags: [],
+            // 是否上推荐的默认值
+            recommend: true,
+            // 是否需要密码的默认值
+            pwd_active: false,
+            pwd: '',
+            // 文章封面id
+            cover_id: '',
+            // 文章标题
+            title: '',
+            // 文章简介
+            abstract: '',
+        },
+        created(){
+            let img = document.getElementById('cover_img')
+            let path = location.pathname
+            let index = path.indexOf('add_article')
+            if (index !== -1){
+                // 该路径为添加文章
+                this.init_add_article(img)
+            }else{
+                // 走的编辑文章方法
+                this.init_edit_article(img)
+            }
+        },
+        methods: {
+            {#当关闭侧边栏时的提示操作   目前没起作用#}
+            add_handleClose(done) {
+                done()
+            },
+            // 添加文章和编辑文章的公共方法
+            add_edit_article(){
+                let data = {
+                    title: this.title,
+                    cover_id: this.cover_id,
+                    pwd: this.pwd,
+                    recommend: this.recommend,
+                    tags: this.tags,
+                    category: this.category_id,
+                    content: editor.querySelector('.editormd-markdown-textarea').value,
+                    status: 1,
+                }
+                return data
+            },
+
+            // 添加或编辑文章的回调方法
+            add_edit_article_callback(res){
+                if (res.code){
+                         this.$message.error(res.msg)
+                         return
+                     }
+                     this.$message.success(res.msg)
+                     setTimeout(()=>{
+                         location.href = `/article/${res.data}/`
+                     },1000)
+            },
+
+            // 添加文章
+            add_article(){
+                let data = this.add_edit_article()
+                axios.post('/api/article/', data).then(res=>{
+                    this.add_edit_article_callback(res)
+                })
+            },
+
+            // 添加文章的初始化
+            init_add_article(img){
+                let cover_list = eval(img.getAttribute('data'))
+                let item = cover_list[Math.floor(cover_list.length * Math.random())]
+                console.log(item.url)
+                img.setAttribute('src', item.url)
+                this.cover_id = String(item.nid)
+            },
+
+            // 编辑文章
+            edit_article(nid){
+                let data = this.add_edit_article()
+                // 在前端拼接字符串需要反引号` `
+                axios.put(`/api/article/${nid}/`, data).then(res=>{
+                    console.log(res)
+                     this.add_edit_article_callback(res)
+                })
+            },
+
+            // 编辑文章的初始化
+            init_edit_article(img){
+                let box = document.getElementById('edit_info')
+                this.title = box.getAttribute('data_title')
+                this.abstract = box.getAttribute('data_abstract')
+                this.cover_id = box.getAttribute('data_cover_id')
+                let cover_url = box.getAttribute('data_cover_url')
+                img.setAttribute('src',cover_url)
+
+                let category_id = box.getAttribute('data_category')
+                if(category_id !== 'None'){
+                    this.category_id = category_id
+                }
+
+                this.tags = eval(box.getAttribute('data_tags'))
+
+                let pwd = box.getAttribute('data_pwd')
+                if(pwd !== 'None'){
+                    this.pwd_active = true
+                    this.pwd = pwd
+                }
+                let recommend = box.getAttribute("data_recommend")
+                if(recommend === 'True'){
+                    this.recommend = true
+                } else{
+                    this.recommend = false
+                }
+            },
+
+            // 选择图片
+            select_cover(val){
+                setTimeout(()=>{
+                    let v = document.querySelector('.article_cover input').value
+                    let cover = document.getElementById('cover_img')
+                    cover.src = v
+                },1)
+            }
+        },
+    })
+</script>
+
+</body>
+</html>
