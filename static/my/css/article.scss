@@ -43,6 +43,10 @@
     width: calc(100%)
   }
 
+  .article_bottom {
+    display: none;
+  }
+
   .comment_submit{
     margin-top: 20px;
     min-height: 200px;
@@ -84,6 +88,12 @@
           border: none;
           outline: none;
         }
+      }
+
+      .face_icon {
+        position: absolute;
+        left: 15px;
+        bottom: 10px;
       }
 
       > button{
