@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-3&@48z42ie@@w8l2psglagm&)v8q5ugpy=m$l0evob!b&=g1rz"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -136,9 +136,9 @@ USE_TZ = True
 STATIC_URL = "/static/"
 # 使用了scss文件，所以要在settings中配置让他知道这个静态文件在哪里
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '/static/')
+    os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = 'static'
 
 
 # 用户自己上传文件
